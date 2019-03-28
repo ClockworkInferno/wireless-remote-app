@@ -1,0 +1,37 @@
+#create user account
+
+import os
+import getpass
+import sys
+#import MySQLdb
+
+#need to figure out a way to compare email to see if it already exsists in database
+
+#check password
+def  checkPassword(str1,str2):
+    if len(str1) < 8 :
+        print("password is not long enough")
+        return 0
+    if str1 != str2 :
+        print("Passwords do not match")
+        return 0
+
+    return 1
+
+#main
+passwordOk = 0
+
+email = input("Please enter your email address: ")
+#verify email not already used
+username = input("Please enter a unique username: ")
+#verify username is is not taken
+while passwordOk == 0:
+    print("please enter a password that is at least 8 character and then confirm the password: \n" )
+    password = getpass.getpass()
+    confirmPassword = getpass.getpass()
+    passwordOk = checkPassword(password,confirmPassword)
+    if passwordOk == 1:
+        break
+fname = input("please enter your first name")
+lname = input("please enter your last name")
+    

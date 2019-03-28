@@ -1,0 +1,10 @@
+from user import User
+
+class LookupUserInfo
+	def findself(username,useraccount, phone_number, email, repository)
+	return(phone_number, email)
+	useraccount.repository = repository
+
+	def find_account(username, phone_number, security_question, email)
+	find_my_account = useraccount.repository(security_question, phone_number)
+	return find_my_account

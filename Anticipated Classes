@@ -1,0 +1,30 @@
+These classes are fluid and are subject to change (adding or removal) 
+
+Admin: 
+functions - close accounts, encrypt data, send notifications, create new users
+
+user:
+ChangePassword -> change the password of the current user
+ChangeEmail -> change the email of the current user
+RecoverPassword -> recover password when lost. 
+
+subs:
+SubscriptionHandler -> subscribe/unsubscribe to services
+
+payment:
+PaymentHandler -> take input for payment options for subscription services
+
+registration:
+require usernames unique
+require passwords to be adherent to recognized standards
+require isp input
+
+metrics:
+query active accounts
+measure rating of application
+
+ispdata:
+use service provider api to pull users relevant channels
+
+
+
